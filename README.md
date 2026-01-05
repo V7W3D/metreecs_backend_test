@@ -28,6 +28,6 @@ cd src && uvicorn app:app --reload
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/movements` | Create movement (header: `idempotency-key`) |
+| POST | `/movements` | Create movement (header: `idempotency-key: UUID`) |
 | GET | `/products/{id}/stock` | Get stock (supports ETag/304) |
 | GET | `/health` | Health check |
